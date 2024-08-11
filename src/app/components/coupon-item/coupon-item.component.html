@@ -1,0 +1,38 @@
+<div class="container"> 
+    <div class=   "coupon-grid">
+     <div class=  "coupon-card">
+      <div class= "coupon-details">
+        <h2 class="coupon-code">code: {{ coupon.code }}</h2>
+        <h4 class="coupon-value">{{coupon.fixed? "$":"%"}}{{ coupon.value}}</h4>
+        <h4 class="coupon-type">Type: {{coupon.fixed? "fixed" :"percentage"}}</h4>
+        <h4 class="coupon-type">Expiry date: {{coupon.expirationDate}}</h4>
+        <h4 class="coupon-type">Quantity: {{coupon.numberOfUses}}</h4>
+      </div>
+     </div>
+    </div>
+  
+  
+  
+    <!-- Action buttons -->
+    <div class="row gap-05">
+      <button
+        type="button"
+        pButton
+        icon="pi pi-pencil"
+        (click)="editCoupon()"
+        label="Edit"
+      ></button>
+      <button
+        type="button"
+        pButton
+        icon="pi pi-trash"
+        (click)="confirmDelete()"
+        label="Delete"
+        class="p-button-danger"
+        #deleteButton
+      ></button>
+    </div>
+  </div>
+  
+  <p-confirmPopup></p-confirmPopup>
+  

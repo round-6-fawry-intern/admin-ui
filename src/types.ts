@@ -27,6 +27,7 @@ export interface Options {
     | boolean;
 }
 
+
 export interface Products {
   items: Product[];
   total: number;
@@ -43,6 +44,15 @@ export interface Product {
   quantity: number;
   category: string;
   description: string;
+}
+
+export interface Coupon {
+  id?: number;
+  value: number;
+  code: string;
+  numberOfUses: number;
+  fixed: boolean;
+  expirationDate: string;
 }
 
 export interface PaginationParams {

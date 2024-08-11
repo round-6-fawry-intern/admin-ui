@@ -1,0 +1,39 @@
+<div class="column gap-1">
+  <!-- Add coupon Button -->
+  <button
+    type="button"
+    pButton
+    icon="pi pi-plus"
+    (click)="toggleAddPopup()"
+    label="Add Coupon"
+    class="add-coupon-btn "
+  ></button>
+
+  <!-- Coupons Section -->
+  <div class="row wrap gap-2 space-between">
+    <coupon-item
+      *ngFor="let coupon of coupons"
+      [coupon]="coupon"
+      (edit)="toggleEditPopup($event)"
+      (delete)="toggleDeletePopup($event)"
+    ></coupon-item>
+  </div>
+
+
+</div>
+
+<!-- Edit Product -->
+<coupon-edit-popup
+  [coupon]="selectedCoupon"
+  [(display)]="displayEditPopup"
+  (confirm)="onConfirmEdit($event)"
+  header="Edit Coupon"
+  ></coupon-edit-popup>
+
+
+<!-- Add Product -->
+<coupon-edit-popup
+  [(display)]="displayAddPopup"
+  (confirm)="onConfirmAdd($event)"
+  header="Add Coupon"
+></coupon-edit-popup>
