@@ -56,7 +56,7 @@ export class HomeComponent {
   selectedProduct: Product = {
     id: 0,
     name: '',
-    image: '',
+    imageUrl: '',
     price: 0,
     quantity: 0,
     description: '',

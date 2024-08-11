@@ -40,7 +40,7 @@ export interface Product {
   id?: number;
   price: number;
   name: string;
-  image?: string;
+  imageUrl?: string;
   quantity: number;
   category: string;
   description: string;

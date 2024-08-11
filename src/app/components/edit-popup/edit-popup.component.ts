@@ -36,7 +36,7 @@ export class EditPopupComponent {
 
   @Input() product: Product = {
     name: '',
-    image: '',
+    imageUrl: '',
     price: 0,
     quantity: 0,
     description: '',
@@ -75,7 +75,7 @@ export class EditPopupComponent {
 
     this.confirm.emit({
       name: name || '',
-      image: image || '',
+      imageUrl: image || '',
       price: price || 0,
       quantity: quantity || 0,
       description: description || '',
