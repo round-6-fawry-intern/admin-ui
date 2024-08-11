@@ -14,4 +14,9 @@ export const routes: Routes = [
     loadChildren: () =>
       import('./modules/about-us/about-us.module').then((m) => m.AboutUsModule),
   },
+  {
+    path: 'coupones',
+    loadChildren: () =>
+      import('./modules/coupon/coupones.module').then((m) => m.CouponesModule),
+  },
 ];

@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { Paginator, PaginatorModule } from 'primeng/paginator';
 import { EditPopupComponent } from '../components/edit-popup/edit-popup.component';
 import { ButtonModule } from 'primeng/button';
+import { CouponesModule } from '../modules/coupon/coupones.module';
 
 @Component({
   selector: 'app-home',
@@ -16,6 +17,7 @@ import { ButtonModule } from 'primeng/button';
     PaginatorModule,
     EditPopupComponent,
     ButtonModule,
+    CouponesModule,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

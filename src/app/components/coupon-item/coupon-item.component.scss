@@ -1,0 +1,75 @@
+.wrapper {
+    width: 250px;
+  
+  
+    .code {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+  
+    .value-label {
+      font-weight: 300;
+      font-size: 1rem;
+    }
+  
+    .value {
+      font-weight: 500;
+      font-size: 1rem;
+    }
+  }
+  
+  .coupon-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .coupon-code {
+    font-size: 1.5rem;
+    margin: 5px 0;
+    color: #e67e22;
+  }
+  
+  .coupon-value {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #e67e22;
+  }
+
+  .coupon-type {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #e67e22;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .coupon-card {
+      max-width: 100%;
+    }
+  }
+  
+
+    // .product-grid {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   gap: 20px; /* Space between items */
+  // }
+  
+  // .product-card {
+  //   background: #fff;
+  //   border-radius: 12px;
+  //   box-shadow: 0 6px 12px rgb(255, 238, 0);
+  //   max-width: 350px;
+  //   width: 100%;
+  //   overflow: hidden;
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+  
+  // .product-image {
+  //   width: 100%;
+  //   height: 200px; /* Adjust as needed */
+  //   overflow: hidden;
+  // }

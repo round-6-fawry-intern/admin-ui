@@ -1,0 +1,59 @@
+<p-dialog
+  [header]="header"
+  [(visible)]="display"
+  [modal]="true"
+  [closable]="false"
+>
+  <div class="column gap-1 form-wrapper" [formGroup]="couponForm">
+    <!-- CODE -->
+    <div class="row gap-05">
+      <span class="value-label">Code:</span>
+      <input type="text" formControlName="code" />
+    </div>
+
+    <!-- VALUE -->
+    <div class="row gap-05">
+      <span class="value-label">value:</span>
+      <input type="text" formControlName="value" />
+    </div>
+       
+    <!-- EXPRY DATE -->
+    <div class="row gap-05">
+      <span class="value-label">ex date:</span>
+      <input type="date" formControlName="expirationDate" />
+    </div>
+
+    <!-- QUANTITY -->
+    <div class="row gap-05">
+      <span class="value-label">Quantity:</span>
+      <input type="text" formControlName="numberOfUses" />
+    </div>
+
+    <!-- FIXED -->
+    <div class="row gap-05">
+      <span class="value-label">Fixed:</span>
+      <input type="checkbox" formControlName="fixed" />
+    </div>
+
+  
+  </div>
+
+  <!-- Footer with action buttons -->
+  <p-footer>
+    <button
+      type="button"
+      pButton
+      icon="pi pi-check"
+      (click)="onConfirm()"
+      label="Confirm"
+      [class.disabled]="!couponForm.valid"
+    ></button>
+    <button
+      type="button"
+      pButton
+      icon="pi pi-times"
+      (click)="onCancel()"
+      label="Cancel"
+    ></button>
+  </p-footer>
+</p-dialog>
